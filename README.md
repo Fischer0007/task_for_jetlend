@@ -1,5 +1,5 @@
 # Task_for_jetlend
-## For Windows
+## For Windows:
 
 Предусловие: на машине установлен Python version >= 3.5 и Git.
 
