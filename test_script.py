@@ -13,7 +13,6 @@ def test_new_application(driver):
     driver.find_element(By.CLASS_NAME, "onboardingNavigation_container__right__2e5Sh").click()
     time.sleep(4)
 
-
     driver.find_element(By.CSS_SELECTOR, "#root > div.layout_container__3UOP4 > div.mainContainer_container__2tFuH > "
                                          "div > div:nth-child(1) > div.block_footer__1SzBe.block_footer--no-border__M9z4Z "
                                          "> div > div.dashboard_buttons-container__main__1NKdH > span:nth-child(1) > button").click()
@@ -30,7 +29,7 @@ def test_new_application(driver):
                                                   "div.stepProfileDetailsInput_form-container__3g_5G > div.grid-row.h-mt-20 > "
                                                   "div > div.range_knobs-container__NvCj8 > div")
 
-    move.click_and_hold(slider).move_by_offset(random.randint(1,200), 0).release().perform()
+    move.click_and_hold(slider).move_by_offset(random.randint(1, 200), 0).release().perform()
     time.sleep(3)
 
     driver.find_element(By.CSS_SELECTOR, "#root > div.layout_container__3UOP4 > div.mainContainer_container__2tFuH > "
@@ -47,12 +46,12 @@ def test_new_application(driver):
 
         driver.find_element(By.XPATH, "/html/body/div[12]/div/div/form/section/div/div/div[2]/div[1]/label").click()
         time.sleep(1)
-        pyautogui.write(r'G:\passport-main-page-demo-01.5a795789.jpg')
+        pyautogui.write(r'C:\passport-main-page-demo-01.5a795789')
         pyautogui.press('enter')
         time.sleep(5)
         driver.find_element(By.XPATH, "/html/body/div[12]/div/div/form/section/div/div/div[2]/div[2]/label").click()
         time.sleep(1)
-        pyautogui.write(r'G:\passport-main-page-demo-01.5a795789.jpg')
+        pyautogui.write(r'C:\passport-main-page-demo-01.5a795789')
         pyautogui.press('enter')
 
         time.sleep(10)
@@ -68,5 +67,5 @@ def test_new_application(driver):
 
         driver.find_element(By.XPATH, '//*[@id="root"]/div[1]/div[3]/div/div/div[2]/div[12]/div/span/button').click()
         time.sleep(15)
-        driver.save_screenshot('screenshots/Возобновляемая кредитная линия предварительно одобрена.png')
 
+        driver.save_screenshot('screenshots/Возобновляемая кредитная линия предварительно одобрена.png')
